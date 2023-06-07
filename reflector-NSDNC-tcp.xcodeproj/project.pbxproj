@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D77513602A30E92500C19406 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D775135F2A30E92500C19406 /* main.mm */; };
+		D77513662A30E9CD00C19406 /* IPSME_MsgEnv.m in Sources */ = {isa = PBXBuildFile; fileRef = D77513632A30E9CD00C19406 /* IPSME_MsgEnv.m */; };
+		D775136A2A30E9E700C19406 /* msg_cache-dedup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D77513692A30E9E700C19406 /* msg_cache-dedup.cpp */; };
+		D77513782A30EA0300C19406 /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D775136C2A30EA0300C19406 /* JSON.m */; };
+		D77513792A30EA0300C19406 /* JSON_Msg+Ack.m in Sources */ = {isa = PBXBuildFile; fileRef = D77513772A30EA0300C19406 /* JSON_Msg+Ack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		D77513552A30E80200C19406 /* reflector-NSDNC-tcp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "reflector-NSDNC-tcp"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D775135F2A30E92500C19406 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		D77513632A30E9CD00C19406 /* IPSME_MsgEnv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPSME_MsgEnv.m; sourceTree = "<group>"; };
+		D77513652A30E9CD00C19406 /* IPSME_MsgEnv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPSME_MsgEnv.h; sourceTree = "<group>"; };
+		D77513682A30E9E700C19406 /* msg_cache-dedup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "msg_cache-dedup.h"; sourceTree = "<group>"; };
+		D77513692A30E9E700C19406 /* msg_cache-dedup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "msg_cache-dedup.cpp"; sourceTree = "<group>"; };
+		D775136C2A30EA0300C19406 /* JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSON.m; sourceTree = "<group>"; };
+		D77513742A30EA0300C19406 /* JSON_Msg+Ack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSON_Msg+Ack.h"; sourceTree = "<group>"; };
+		D77513762A30EA0300C19406 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		D77513772A30EA0300C19406 /* JSON_Msg+Ack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSON_Msg+Ack.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,9 @@
 		D775134C2A30E80200C19406 = {
 			isa = PBXGroup;
 			children = (
+				D775136B2A30EA0300C19406 /* objc-json-msg.git */,
+				D77513672A30E9E700C19406 /* cpp-msg_cache-dedup.git */,
+				D77513612A30E9CD00C19406 /* objc-msgenv-NSDNC.git */,
 				D77513572A30E80200C19406 /* reflector-NSDNC-tcp */,
 				D77513562A30E80200C19406 /* Products */,
 			);
@@ -60,6 +75,35 @@
 				D775135F2A30E92500C19406 /* main.mm */,
 			);
 			path = "reflector-NSDNC-tcp";
+			sourceTree = "<group>";
+		};
+		D77513612A30E9CD00C19406 /* objc-msgenv-NSDNC.git */ = {
+			isa = PBXGroup;
+			children = (
+				D77513652A30E9CD00C19406 /* IPSME_MsgEnv.h */,
+				D77513632A30E9CD00C19406 /* IPSME_MsgEnv.m */,
+			);
+			path = "objc-msgenv-NSDNC.git";
+			sourceTree = "<group>";
+		};
+		D77513672A30E9E700C19406 /* cpp-msg_cache-dedup.git */ = {
+			isa = PBXGroup;
+			children = (
+				D77513682A30E9E700C19406 /* msg_cache-dedup.h */,
+				D77513692A30E9E700C19406 /* msg_cache-dedup.cpp */,
+			);
+			path = "cpp-msg_cache-dedup.git";
+			sourceTree = "<group>";
+		};
+		D775136B2A30EA0300C19406 /* objc-json-msg.git */ = {
+			isa = PBXGroup;
+			children = (
+				D77513742A30EA0300C19406 /* JSON_Msg+Ack.h */,
+				D77513772A30EA0300C19406 /* JSON_Msg+Ack.m */,
+				D77513762A30EA0300C19406 /* JSON.h */,
+				D775136C2A30EA0300C19406 /* JSON.m */,
+			);
+			path = "objc-json-msg.git";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77513662A30E9CD00C19406 /* IPSME_MsgEnv.m in Sources */,
+				D77513792A30EA0300C19406 /* JSON_Msg+Ack.m in Sources */,
+				D775136A2A30E9E700C19406 /* msg_cache-dedup.cpp in Sources */,
 				D77513602A30E92500C19406 /* main.mm in Sources */,
+				D77513782A30EA0300C19406 /* JSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = include;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -228,6 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = include;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

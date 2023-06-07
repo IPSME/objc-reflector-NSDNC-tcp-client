@@ -1,0 +1,9 @@
+[submodule "objc-json-msg.git"]
+	path = objc-json-msg.git
+	url = git@gitlab.com:interop-protocols/objc-json-msg.git
+[submodule "objc-msgenv-NSDNC.git"]
+	path = objc-msgenv-NSDNC.git
+	url = git@github.com:IPSME/objc-msgenv-NSDNC.git
+[submodule "cpp-msg_cache-dedup.git"]
+	path = cpp-msg_cache-dedup.git
+	url = git@github.com:IPSME/cpp-msg_cache-dedup.git

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D77513592A30E80200C19406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D77513582A30E80200C19406 /* main.m */; };
+		D77513602A30E92500C19406 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D775135F2A30E92500C19406 /* main.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		D77513552A30E80200C19406 /* reflector-NSDNC-tcp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "reflector-NSDNC-tcp"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D77513582A30E80200C19406 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D775135F2A30E92500C19406 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		D77513572A30E80200C19406 /* reflector-NSDNC-tcp */ = {
 			isa = PBXGroup;
 			children = (
-				D77513582A30E80200C19406 /* main.m */,
+				D775135F2A30E92500C19406 /* main.mm */,
 			);
 			path = "reflector-NSDNC-tcp";
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D77513592A30E80200C19406 /* main.m in Sources */,
+				D77513602A30E92500C19406 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
